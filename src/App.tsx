@@ -4,6 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import LogoImage from '../logo.jpeg';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   TrendingUp, 
@@ -41,7 +42,7 @@ function cn(...inputs: ClassValue[]) {
 }
 
 const TELEGRAM_LINK = "https://t.me/+cx7L-14G2OdiYTJl";
-const LOGO_IMAGE = "/logo.jpeg"; 
+const LOGO_IMAGE = LogoImage; 
 
 const BAR_DATA = [
   { value: 40 },
