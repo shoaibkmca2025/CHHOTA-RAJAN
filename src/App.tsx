@@ -41,7 +41,7 @@ function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-const TELEGRAM_LINK = "https://t.me/+cx7L-14G2OdiYTJl";
+const TELEGRAM_LINK = "https://t.me/+TL-6ctK1M3U3MTM1";
 const LOGO_IMAGE = LogoImage; 
 
 const BAR_DATA = [
@@ -66,7 +66,7 @@ export default function App() {
   const [profitData] = useState(INITIAL_PROFIT_DATA);
 
   return (
-    <div className="h-screen bg-[#020617] text-slate-200 selection:bg-[#5d5fef]/30 font-sans overflow-hidden relative">
+    <div className="h-screen bg-[#020617] text-slate-200 selection:bg-[#10b981]/30 font-sans overflow-hidden relative">
       {/* Subtle Grid Background */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none" 
            style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
@@ -81,11 +81,11 @@ export default function App() {
             animate={{ scale: 1, opacity: 1 }}
             className="relative"
           >
-            <div className="w-24 h-24 md:w-48 md:h-48 rounded-full p-1 bg-gradient-to-br from-[#5d5fef] to-[#312e81] shadow-[0_0_40px_rgba(93,95,239,0.3)] flex items-center justify-center">
+            <div className="w-24 h-24 md:w-48 md:h-48 rounded-full p-1 bg-gradient-to-br from-[#10b981] to-[#0f766e] shadow-[0_0_40px_rgba(16,185,129,0.3)] flex items-center justify-center">
               <div className="w-[94%] h-[94%] rounded-full border-4 border-[#020617] overflow-hidden bg-black">
                 <img 
                   src={LOGO_IMAGE} 
-                  alt="Ankit Rao Sahab" 
+                  alt="CHHOTA RAJAN" 
                   className="w-full h-full object-cover" 
                   referrerPolicy="no-referrer" 
                 />
@@ -102,9 +102,9 @@ export default function App() {
             className="text-center space-y-1.5 md:space-y-3"
           >
             <h1 className="text-2xl md:text-4xl font-black text-white tracking-tight uppercase flex items-center justify-center gap-2">
-              <span className="text-xl md:text-3xl">🏏</span> Ankit Rao Sahab
+              <span className="text-xl md:text-3xl">🏏</span> CHHOTA RAJAN
             </h1>
-            <div className="flex items-center justify-center gap-2 text-[#5d5fef] font-black text-[10px] md:text-sm uppercase tracking-[0.2em]">
+            <div className="flex items-center justify-center gap-2 text-[#10b981] font-black text-[10px] md:text-sm uppercase tracking-[0.2em]">
               <Users size={14} className="md:w-5 md:h-5" />
               <span>30K+ Active Members</span>
             </div>
@@ -117,12 +117,12 @@ export default function App() {
             transition={{ delay: 0.2 }}
             className="flex gap-2 md:gap-4"
           >
-            <div className="px-4 py-1.5 md:px-8 md:py-3 rounded-full bg-[#5d5fef]/10 border border-[#5d5fef]/30 text-[10px] md:text-sm font-black text-white flex items-center gap-2 md:gap-3 shadow-lg backdrop-blur-sm">
-              <Trophy size={14} className="md:w-5 md:h-5 text-yellow-500" />
+            <div className="px-4 py-1.5 md:px-8 md:py-3 rounded-full bg-[#10b981]/10 border border-[#10b981]/30 text-[10px] md:text-sm font-black text-white flex items-center gap-2 md:gap-3 shadow-lg backdrop-blur-sm">
+              <Trophy size={14} className="md:w-5 md:h-5 text-amber-400" />
               Latest Updates
             </div>
-            <div className="px-4 py-1.5 md:px-8 md:py-3 rounded-full bg-[#5d5fef]/10 border border-[#5d5fef]/30 text-[10px] md:text-sm font-black text-white flex items-center gap-2 md:gap-3 shadow-lg backdrop-blur-sm">
-              <Zap size={14} className="md:w-5 md:h-5 text-yellow-400" />
+            <div className="px-4 py-1.5 md:px-8 md:py-3 rounded-full bg-[#10b981]/10 border border-[#10b981]/30 text-[10px] md:text-sm font-black text-white flex items-center gap-2 md:gap-3 shadow-lg backdrop-blur-sm">
+              <Zap size={14} className="md:w-5 md:h-5 text-amber-300" />
               Live Action
             </div>
           </motion.div>
@@ -133,16 +133,16 @@ export default function App() {
           {/* Stats Grid */}
           <div className="grid grid-cols-3 gap-3 md:gap-4 w-full">
             {[
-              { label: "Match Schedule", value: "67,892" },
-              { label: "Win Rate", value: "95%" },
-              { label: "Rating", value: "4.9★" }
+              { label: "Match Schedule", value: "54,210" },
+              { label: "Win Rate", value: "91%" },
+              { label: "Rating", value: "4.7★" }
             ].map((stat, i) => (
               <motion.div 
                 key={i}
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.3 + (i * 0.1) }}
-                className="bg-[#1e293b]/40 border border-white/5 rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center text-center shadow-xl backdrop-blur-md group hover:border-[#5d5fef]/30 transition-colors"
+                className="bg-[#1e293b]/40 border border-white/5 rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center text-center shadow-xl backdrop-blur-md group hover:border-[#10b981]/30 transition-colors"
               >
                 <span className="text-xl md:text-3xl font-black text-white mb-1 tracking-tighter">{stat.value}</span>
                 <span className="text-[9px] md:text-xs font-bold text-[#64748b] leading-tight uppercase tracking-wider">{stat.label}</span>
@@ -159,7 +159,7 @@ export default function App() {
           >
             <motion.a 
               href={TELEGRAM_LINK}
-              className="w-full bg-gradient-to-r from-[#5d5fef] to-[#312e81] text-white py-5 md:py-9 rounded-xl md:rounded-3xl font-black text-sm md:text-2xl shadow-[0_10px_40px_rgba(93,95,239,0.3)] flex items-center justify-center gap-2 md:gap-4 transition-all active:scale-[0.98] group relative overflow-hidden"
+              className="w-full bg-gradient-to-r from-[#10b981] to-[#0f766e] text-white py-5 md:py-9 rounded-xl md:rounded-3xl font-black text-sm md:text-2xl shadow-[0_10px_40px_rgba(16,185,129,0.3)] flex items-center justify-center gap-2 md:gap-4 transition-all active:scale-[0.98] group relative overflow-hidden"
               animate={{ scale: [1, 1.03, 1] }}
               transition={{ duration: 1, repeat: Infinity, ease: 'easeInOut' }}
             >
@@ -180,7 +180,7 @@ export default function App() {
               {[
                 { icon: CheckCircle2, label: "Verified", color: "text-slate-300" },
                 { icon: ShieldCheck, label: "Secure", color: "text-slate-300" },
-                { icon: TrendingUp, label: "Profitable", color: "text-[#5d5fef]" },
+                { icon: TrendingUp, label: "Profitable", color: "text-[#10b981]" },
                 { icon: Star, label: "Top Rated", color: "text-slate-300" }
               ].map((item, i) => (
                 <div key={i} className="flex flex-col items-center space-y-2.5">
@@ -199,7 +199,7 @@ export default function App() {
             className="flex flex-col items-center justify-center gap-3 pt-6 w-full"
           >
             <p className="text-[#64748b] text-[10px] md:text-xs font-medium tracking-wide">
-              © 2026 ANKIT RAO SAHAB. All rights reserved.
+              © 2026 CHHOTA RAJAN. All rights reserved.
             </p>
             <p className="text-[#94a3b8] text-[10px] md:text-xs font-medium flex items-center gap-2">
               <span>🏏</span> Professional Cricket Analysis
